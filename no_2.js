@@ -18,7 +18,7 @@ function solution(N, users) {
 
     answer.sort((a,b) =>
     {
-        return a[1]>=b[1]? -1:a[1]<b[1]?1:0;
+        return a[1]>b[1]? -1:a[1]<=b[1]?1:0;
     })
 
     return answer.map(item=> item[0]);
